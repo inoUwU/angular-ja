@@ -40,7 +40,7 @@ showSecretMessage() {
 </docs-step>
 
 <docs-step title="テンプレートイベントにバインド">
-`app.t`のテンプレートコードを更新し、`section`要素の`mouseover`イベントにバインドします。
+`app.ts`のテンプレートコードを更新し、`section`要素の`mouseover`イベントにバインドします。
 
 <!-- prettier-ignore -->
 ```angular-html
