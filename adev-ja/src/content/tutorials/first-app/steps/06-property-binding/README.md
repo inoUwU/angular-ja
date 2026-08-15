@@ -1,50 +1,50 @@
-# Add a property binding to a component’s template
+# コンポーネントのテンプレートにプロパティバインディングを追加する
 
-This tutorial lesson demonstrates how to add property binding to a template and use it to pass dynamic data to components.
+このチュートリアルレッスンではテンプレートにプロパティバインディングを追加する方法とコンポーネントに動的データを渡すための使用方法を紹介します。
 
 <docs-video src="https://www.youtube.com/embed/eM3zi_n7lNs?si=AsiczpWnMz5HhJqB&amp;start=599"/>
 
-## What you'll learn
+## 何を学ぶか
 
-- Your app has data bindings in the `Home` template.
-- Your app sends data from the `Home` to the `HousingLocation`.
+- アプリケーションの`Home`テンプレートにデータバインディングが追加されます。
+- アプリケーションが`Home`から`HousingLocation`にデータを送れるようになります。
 
-## Conceptual preview of Inputs
+## inputプロパティのコンセプト概要
 
-In this lesson, you'll continue the process of sharing data from the parent component to the child component by binding data to those properties in the template using property binding.
+このレッスンでは、プロパティバインディングを使ってテンプレート内のプロパティに値を渡し、親コンポーネントから子コンポーネントへデータを共有する方法を続けて学びます。
 
-Property binding enables you to connect a variable to an `Input` in an Angular template. The data is then dynamically bound to the `Input`.
+プロパティバインディングを使うと、Angularテンプレート内で変数を`Input`プロパティに結びつけることができます。こうして渡されたデータは`Input`に動的にバインドされます。
 
-For a more in depth explanation, please refer to the [Property binding](/guide/templates/binding#css-class-and-style-property-bindings) guide.
+より詳しい説明は、ガイドの[プロパティバインディング](/guide/templates/binding#css-class-and-style-property-bindings)を参照してください。
 
 <docs-workflow>
 
-<docs-step title="Update the `Home` template">
-This step adds property binding to the `<app-housing-location>` tag.
+<docs-step title="`Home`テンプレートを更新する">
+このステップでは、`<app-housing-location>`タグにプロパティバインディングを追加します。
 
-In the code editor:
+コードエディタで、
 
-1.  Navigate to `src/app/home/home.ts`
-1.  In the template property of the `@Component` decorator, update the code to match the code below:
-    <docs-code language="angular-ts" header="Add housingLocation property binding" path="adev/src/content/tutorials/first-app/steps/07-dynamic-template-values/src/app/home/home.ts" visibleLines="[15,17]"/>
+1.  `src/app/home/home.ts`に移動します
+1.  `@Component`のテンプレートプロパティで、以下のコードと同じ内容になるよう更新します。
+    <docs-code language="angular-ts" header="housingLocationプロパティバインディングを追加する" path="adev/src/content/tutorials/first-app/steps/07-dynamic-template-values/src/app/home/home.ts" visibleLines="[15,17]"/>
 
-    When adding a property binding to a component tag, we use the `[attribute] = "value"` syntax to notify Angular that the assigned value should be treated as a property from the component class and not a string value.
+    コンポーネントタグにプロパティバインディングを追加する際には、`[attribute] = "value"`という構文を使います。これは割り当てた値を文字列ではなくコンポーネントクラスのプロパティとして扱うようAngularに指示するためのものです。
 
-    The value on the right-hand side is the name of the property from the `Home`.
+    右辺の値は`Home`コンポーネントのプロパティ名です。
 
 </docs-step>
 
-<docs-step title="Confirm the code still works">
-1.  Save your changes and confirm the app does not have any errors.
-1.  Correct any errors before you continue to the next step.
+<docs-step title="コードが正しく動作することを確認する">
+1.  変更を保存し、アプリケーションにエラーがないことを確認します。
+1.  次のステップに進む前に、エラーがあれば修正します。
 </docs-step>
 
 </docs-workflow>
 
-SUMMARY: In this lesson, you added a new property binding and passed in a reference to a class property. Now, the `HousingLocation` has access to data that it can use to customize the component's display.
+SUMMARY: このレッスンでは、新しいプロパティバインディングを追加し、クラスプロパティへの参照を渡しました。これにより、`HousingLocation`はコンポーネントの表示をカスタマイズするために利用可能なデータにアクセスできるようになりました。
 
-For more information about the topics covered in this lesson, visit:
+このレッスンで扱った内容について、さらに詳しく知りたい場合は次のページをご覧ください:
 
 <docs-pill-row>
-  <docs-pill href="/guide/templates/binding#css-class-and-style-property-bindings" title="Property binding"/>
+  <docs-pill href="/guide/templates/binding#css-class-and-style-property-bindings" title="プロパティのバインディング"/>
 </docs-pill-row>
